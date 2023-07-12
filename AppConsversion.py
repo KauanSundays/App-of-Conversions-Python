@@ -1,6 +1,9 @@
 import tkinter as tk
 from tkinter import ttk #Here, Tk themed widget set
 
+def convert():
+    print(entry.get())
+
 # window project
 window = tk.Tk()
 
@@ -15,7 +18,7 @@ title_label.pack()
 #input field
 input_frame = ttk.Frame(master = window)
 entry = ttk.Entry(master = input_frame)
-button = ttk.Button(master = input_frame, text = 'Convert')
+button = ttk.Button(master = input_frame, text = 'Convert', command=convert) #like "Function of others languages"
 entry.pack(side = 'left', padx = 10)
 button.pack(side = 'left')
 input_frame.pack(pady = 10)
