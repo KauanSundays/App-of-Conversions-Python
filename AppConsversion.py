@@ -4,7 +4,7 @@ from tkinter import ttk
 def toggle_theme():
     current_theme = window.tk.call('ttk::style', 'theme', 'use')
     if current_theme == 'default':
-        window.tk.call('ttk::style', 'theme', 'use', 'clam')
+        window.tk.call('ttk::style', 'theme', 'use', 'xpnative')
     else:
         window.tk.call('ttk::style', 'theme', 'use', 'default')
 
